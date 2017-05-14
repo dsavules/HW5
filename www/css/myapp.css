@@ -1,0 +1,61 @@
+/* line 1, ../sass/_main.scss */
+.colorful {
+  color: #bb8833;
+}
+
+/* line 4, ../sass/_main.scss */
+.app {
+  margin: 10px;
+}
+
+
+/* line 9, ../sass/_main.scss */
+.app .chessboard {
+    margin: 20px;
+    margin-left:auto;
+    margin-right:auto;
+}
+/* line 10, ../sass/_main.scss */
+table {
+  border: 10px solid black;
+  width:60%
+
+}
+
+table td {
+  width: 15%;
+
+  font-weight: bold;
+  font-size: x-large;
+  }
+
+ table td:after {
+  content:'';
+  display:block;
+  margin-top:60%;
+}
+
+ td.redcell {
+              height:15%;
+              background-color: red;
+              display: table-cell;
+              text-align: center;
+              vertical-align: middle;
+          }
+
+.goldcell {
+              height:15%;
+              background-color: #FFFFE0;
+              display: table-cell;
+              text-align: center;
+              vertical-align: middle;
+          }
+
+.blackcell {
+              height:15%;
+              background-color: black;
+              font-color: #FFFFFF;
+              display: table-cell;
+              text-align: center;
+              vertical-align: middle;
+          }
