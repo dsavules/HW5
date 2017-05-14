@@ -132,6 +132,7 @@ var app = function() {
         }while(!self.vue.flag);
     };
 
+
     self.vue = new Vue({
         el: "#vue-div",
         delimiters: ['${', '}'],
