@@ -47,6 +47,7 @@
     <div id="vue-div" class="app" style="displa">
 
         <div class="container chessboard">
+            <div><h3>${message}</h3></div>
             <table>
                 <tr v-for="i in [0, 1, 2, 3]">
                     <td v-for="j in [0, 1, 2, 3]" v-on:click="shuffle(i,j)"

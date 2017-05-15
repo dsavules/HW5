@@ -39,6 +39,7 @@ var app = function() {
     self.reset = function () {
         self.vue.board = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16];
         self.vue.tile_color=[1,0,1,0,0,1,0,1,1,0,1,0,0,1,0,2];
+        self.vue.message="15 Puzzle";
     };
 
     self.shuffle = function(row, col) {
@@ -120,6 +121,7 @@ var app = function() {
          if ((rowindex%2==0 && !(inv_count%2==0)) || (!(rowindex%2==0) && (inv_count%2==0)))
             {
              console.log("SOLVABLE");
+             self.vue.message="SOLVABLE CONFIGURATION - Inversions: "+inv_count+", Row from Bottom: "+rowindex;
              self.vue.flag=1;
              return self;
             }
@@ -140,7 +142,8 @@ var app = function() {
         data: {
             board: [],
             tile_color: [],
-            flag: 0
+            flag: 0,
+            message: '15 Puzzle'
         },
         methods: {
             reset: self.reset,
